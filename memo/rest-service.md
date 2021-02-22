@@ -39,3 +39,17 @@ System.out.println(atomic.incrementAndGet());
 * staticをつけないとコンストラクタでの初期化を許すことになる。（インスタンスごとに違う値を設定することができる）
 
 * staticをつけるとインスタンスではなく、クラスで固有な定数となる。
+
+## Mavenビルド
+
+* [rest-service] → [Maven ビルド] 
+
+ゴール：package
+
+* pom.xmlの指定をしなかったらできた。
+
+* targetの下にない。
+
+　→リフレッシュしたらできた。
+
+* リフレッシュ:eclipseの外での反映を中にも反映させたいときなどに使う。
