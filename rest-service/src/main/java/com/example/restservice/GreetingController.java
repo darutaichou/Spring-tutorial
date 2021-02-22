@@ -20,10 +20,9 @@ public class GreetingController {
 	@GetMapping("/rest-service")
 	public Greeting hello(@RequestParam(value = "name", defaultValue = "World")String name) {
 
-		// Greetingクラスのコンストラクタに一意のidと、あいさつ文をセット
-		Greeting greet = new Greeting(counter.incrementAndGet(), String.format(content,name));
+		// 一意のidと、あいさつ文をセットしたGreetingオブジェクトをリターン。
 
-		return greet;
+		return new Greeting(counter.incrementAndGet(), String.format(content,name));
 
 
 	}
