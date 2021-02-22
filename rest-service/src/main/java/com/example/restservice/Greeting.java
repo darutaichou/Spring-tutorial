@@ -3,17 +3,17 @@ package com.example.restservice;
 // HTTPリクエストのidとcontentにおけるセッター・ゲッタークラス
 public class Greeting {
 
-	private int id;
+	private long id;
 	private String content;
 
 	// コンストラクタ
-	public Greeting(int id, String content) {
+	public Greeting(long id, String content) {
 		this.id = id;
 		this.content = content;
 	}
 
 	// idのゲッター
-	public int getId() {
+	public long getId() {
 		return this.id;
 	}
 

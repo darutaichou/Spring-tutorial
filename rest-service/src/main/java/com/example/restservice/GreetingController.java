@@ -21,7 +21,7 @@ public class GreetingController {
 	public Greeting hello(@RequestParam(value = "name", defaultValue = "World")String name) {
 
 		// Greetingクラスのコンストラクタに一意のidと、あいさつ文をセット
-		Greeting greet = new Greeting((int)counter.incrementAndGet(), String.format(content,name));
+		Greeting greet = new Greeting(counter.incrementAndGet(), String.format(content,name));
 
 		return greet;
 
