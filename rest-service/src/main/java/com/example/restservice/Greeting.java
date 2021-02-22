@@ -1,14 +1,13 @@
 package com.example.restservice;
 
-// HTTPリクエストのidとnameにおけるセッター・ゲッター
-
+// HTTPリクエストのidとnameにおけるセッター・ゲッタークラス
 public class Greeting {
 
 	private int id;
 	private String name;
 
 	// コンストラクタ
-	public void Greeting(int id, String name) {
+	public Greeting(int id, String name) {
 		this.id = id;
 		this.name = name;
 	}
@@ -19,7 +18,7 @@ public class Greeting {
 	}
 
 	// nameのゲッター
-	public name getName() {
+	public String getName() {
 		return this.name;
 	}
 }
