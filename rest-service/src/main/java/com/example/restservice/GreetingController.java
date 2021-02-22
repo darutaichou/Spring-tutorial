@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
 	// idを一意にするためのカウンター
-	private AtomicLong counter = new AtomicLong();
+	private final AtomicLong counter = new AtomicLong();
 	// %sにはリクエストパラメータのnameの値が入る(パラメータがない場合は"World"が入る)
-	private String content = "Hello %s";
+	private static final String content = "Hello %s";
 
 	// メイン処理
 	@GetMapping("/rest-service")
